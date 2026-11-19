@@ -10,7 +10,7 @@ export function Pagination({ page, lastPage, onChange }: Props) {
   const btn = "rounded border border-gray-700 px-3 py-1 text-sm text-gray-200 hover:bg-gray-800 disabled:opacity-40";
 
   return (
-    <div className="flex items-center justify-end gap-3 p-3 text-sm text-gray-400">
+    <div className="flex items-center justify-center gap-3 p-3 text-sm text-gray-400">
       <button className={btn} disabled={page <= 1} onClick={() => onChange(page - 1)}>
         Previous
       </button>
